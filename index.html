@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-inline {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-control {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .btn {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Stay Updated</h1>
+    <form class="form-inline borderless-inputs" role="form" method="post" action="/coming-soon/">
+        <input type="hidden" name="csrfmiddlewaretoken" value="lJPRiHkYKB4DtMwCVAbJ46exUdC9UeRGYkMi72TP94rUVUZyVKXYfH1PbJVNSg0N">
+        <div class="form-group">
+            <input type="text" aria-label="First Name" name="first_name" placeholder="First Name" class="form-control" id="contact-form-firstname" value="">
+        </div>
+        <div class="form-group">
+            <input type="text" aria-label="Last Name" name="last_name" placeholder="Last Name" class="form-control" id="contact-form-lastname" value="">
+        </div>
+        <div class="form-group">
+            <input type="email" aria-label="Email" name="email_address" placeholder="Email" class="form-control" id="contact-form-email" value="">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Get notifications" id="email-submit" class="btn btn-secondary coming-soon-btn-secondary">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
