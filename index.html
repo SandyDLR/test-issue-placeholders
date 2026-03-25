@@ -24,12 +24,13 @@
   <p>This text should always be detected for translation.</p>
 
   <!-- Button with only aria-label -->
-  <button aria-label="Open user menu">
+  <button aria-label="Open user menu" tx-attrs="aria-label">
     ☰
   </button>
 
   <!-- Button with visible + aria -->
-  <button aria-label="Close dialog">
+  <button aria-label="Close dialog"
+   tx-attrs="aria-label">
     Close
   </button>
 
@@ -43,6 +44,7 @@
     type="text" 
     placeholder="Search..." 
     aria-label="Search input field"
+    tx-attrs="aria-label"
   />
 
   <!-- Image with alt and aria-label -->
@@ -50,6 +52,7 @@
     src="https://via.placeholder.com/150"
     alt="User profile picture"
     aria-label="Profile image of the user"
+    tx-attrs="aria-label, alt"
   />
 
 </body>
